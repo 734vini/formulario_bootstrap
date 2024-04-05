@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draft Survey Form</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 id="title" class="text-center">NBA Draft Survey Form</h1>
+        <p id="description" class="text-center">Here's your opportunity to join the NBA, answer the form right now!</p>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" type="text" class="form-control" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input id="age" type="age" class="form-control" min="16" max="24" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <label for="dropdown">Select your position</label>
+                <select id="dropdown" class="form-control">
+                    <option>Select your position</option>
+                    <option>Point Guard</option>
+                    <option>Shooting Guard</option>
+                    <option>Small Forward</option>
+                    <option>Power Forward</option>
+                    <option>Center</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Choose your interests</label><br>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="shooting">
+                    <label class="form-check-label" for="shooting">Shooting</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="dribbling">
+                    <label class="form-check-label" for="dribbling">Dribbling</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="defending">
+                    <label class="form-check-label" for="defending">Defending</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="rebounding">
+                    <label class="form-check-label" for="rebounding">Rebounding</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="passing">
+                    <label class="form-check-label" for="passing">Passing</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Select your height in meters</label><br>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="180" name="buttom">
+                    <label class="form-check-label" for="180">&lt; 1.80</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="180-190" name="buttom">
+                    <label class="form-check-label" for="180-190">1.80-1.90</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="191-200" name="buttom">
+                    <label class="form-check-label" for="191-200">1.91-2.00</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="201-210" name="buttom">
+                    <label class="form-check-label" for="201-210">2.01-2.10</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="210" name="buttom">
+                    <label class="form-check-label" for="210">&gt; 2.10</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comments">Tell us more about you</label>
+                <textarea class="form-control" rows="3"></textarea>
+            </div>
+            <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
